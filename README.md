@@ -17,5 +17,5 @@ Currently, only one mode is implemented: The Type Mode
 This mode lights up the home row and nothing else. No distraction.
 
 # PLEASE CONTRIBUTE!
-As this .NET-App utilizes Colore, a .NET wrapper over the Razer SDK. It unfortunately is poorly documented, and I am not a blessed programmer either.
+This .NET-App utilizes Colore, a .NET wrapper over the Razer SDK. It unfortunately is poorly documented, and I am not a blessed programmer either.
 So please, on a voluntary basis, help grow this project.
