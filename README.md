@@ -8,13 +8,25 @@ An open-source GUI for Razer peripherals meant as a replacement to the heavy Raz
 
 ### How to use?
 
+IMPORTANT: Blade can currently only utilize keyboards, I can't test other features than for the Keyboard itself.
+
 Download the release of Blade, start "blade.exe".
 
 Now, you can either choose to have a full keyboard illuminated in one color, or you can choose from Modes:
 
-Currently, only one mode is implemented: The Type Mode
+## General Modes implemented: 
+- The Type Mode
 
 This mode lights up the home row and nothing else. No distraction.
+
+- Gaming Mode
+
+Lights up WASD in red color.
+
+## Game Modes:
+- Minecraft:
+
+Lights up WASD, Hotbar (1-9), Q, E.
 
 # PLEASE CONTRIBUTE!
 This .NET-App utilizes Colore, a .NET wrapper over the Razer SDK. It unfortunately is poorly documented, and I am not a blessed programmer either.
