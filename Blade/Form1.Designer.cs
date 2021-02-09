@@ -35,23 +35,27 @@ namespace Blade
             this.minimizeButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.yellow_button = new System.Windows.Forms.Button();
+            this.white_button = new System.Windows.Forms.Button();
+            this.red_button = new System.Windows.Forms.Button();
+            this.purple_button = new System.Windows.Forms.Button();
+            this.pink_button = new System.Windows.Forms.Button();
+            this.orange_button = new System.Windows.Forms.Button();
+            this.hotpink_button = new System.Windows.Forms.Button();
+            this.green_button = new System.Windows.Forms.Button();
             this.black_color = new System.Windows.Forms.Button();
             this.blue_color = new System.Windows.Forms.Button();
             this.reset_button = new System.Windows.Forms.Button();
-            this.green_button = new System.Windows.Forms.Button();
-            this.hotpink_button = new System.Windows.Forms.Button();
-            this.orange_button = new System.Windows.Forms.Button();
-            this.pink_button = new System.Windows.Forms.Button();
-            this.purple_button = new System.Windows.Forms.Button();
-            this.red_button = new System.Windows.Forms.Button();
-            this.white_button = new System.Windows.Forms.Button();
-            this.yellow_button = new System.Windows.Forms.Button();
             this.typingmode_button = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gaming_button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.minecraft_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -125,6 +129,102 @@ namespace Blade
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Set Keyboard Color";
             // 
+            // yellow_button
+            // 
+            this.yellow_button.BackColor = System.Drawing.Color.Yellow;
+            this.yellow_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellow_button.ForeColor = System.Drawing.Color.Yellow;
+            this.yellow_button.Location = new System.Drawing.Point(119, 139);
+            this.yellow_button.Name = "yellow_button";
+            this.yellow_button.Size = new System.Drawing.Size(75, 23);
+            this.yellow_button.TabIndex = 9;
+            this.yellow_button.UseVisualStyleBackColor = false;
+            this.yellow_button.Click += new System.EventHandler(this.yellow_button_Click);
+            // 
+            // white_button
+            // 
+            this.white_button.BackColor = System.Drawing.Color.GhostWhite;
+            this.white_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.white_button.ForeColor = System.Drawing.Color.GhostWhite;
+            this.white_button.Location = new System.Drawing.Point(6, 139);
+            this.white_button.Name = "white_button";
+            this.white_button.Size = new System.Drawing.Size(75, 23);
+            this.white_button.TabIndex = 8;
+            this.white_button.UseVisualStyleBackColor = false;
+            this.white_button.Click += new System.EventHandler(this.white_button_Click);
+            // 
+            // red_button
+            // 
+            this.red_button.BackColor = System.Drawing.Color.Red;
+            this.red_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.red_button.ForeColor = System.Drawing.Color.Red;
+            this.red_button.Location = new System.Drawing.Point(119, 110);
+            this.red_button.Name = "red_button";
+            this.red_button.Size = new System.Drawing.Size(75, 23);
+            this.red_button.TabIndex = 7;
+            this.red_button.UseVisualStyleBackColor = false;
+            this.red_button.Click += new System.EventHandler(this.red_button_Click);
+            // 
+            // purple_button
+            // 
+            this.purple_button.BackColor = System.Drawing.Color.MediumPurple;
+            this.purple_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.purple_button.ForeColor = System.Drawing.Color.MediumPurple;
+            this.purple_button.Location = new System.Drawing.Point(7, 110);
+            this.purple_button.Name = "purple_button";
+            this.purple_button.Size = new System.Drawing.Size(75, 23);
+            this.purple_button.TabIndex = 6;
+            this.purple_button.UseVisualStyleBackColor = false;
+            this.purple_button.Click += new System.EventHandler(this.purple_button_Click);
+            // 
+            // pink_button
+            // 
+            this.pink_button.BackColor = System.Drawing.Color.Pink;
+            this.pink_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pink_button.ForeColor = System.Drawing.Color.Pink;
+            this.pink_button.Location = new System.Drawing.Point(119, 80);
+            this.pink_button.Name = "pink_button";
+            this.pink_button.Size = new System.Drawing.Size(75, 23);
+            this.pink_button.TabIndex = 5;
+            this.pink_button.UseVisualStyleBackColor = false;
+            this.pink_button.Click += new System.EventHandler(this.pink_button_Click);
+            // 
+            // orange_button
+            // 
+            this.orange_button.BackColor = System.Drawing.Color.Orange;
+            this.orange_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.orange_button.ForeColor = System.Drawing.Color.Orange;
+            this.orange_button.Location = new System.Drawing.Point(7, 80);
+            this.orange_button.Name = "orange_button";
+            this.orange_button.Size = new System.Drawing.Size(75, 23);
+            this.orange_button.TabIndex = 4;
+            this.orange_button.UseVisualStyleBackColor = false;
+            this.orange_button.Click += new System.EventHandler(this.orange_button_Click);
+            // 
+            // hotpink_button
+            // 
+            this.hotpink_button.BackColor = System.Drawing.Color.HotPink;
+            this.hotpink_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hotpink_button.ForeColor = System.Drawing.Color.HotPink;
+            this.hotpink_button.Location = new System.Drawing.Point(119, 50);
+            this.hotpink_button.Name = "hotpink_button";
+            this.hotpink_button.Size = new System.Drawing.Size(75, 23);
+            this.hotpink_button.TabIndex = 3;
+            this.hotpink_button.UseVisualStyleBackColor = false;
+            this.hotpink_button.Click += new System.EventHandler(this.hotpink_button_Click);
+            // 
+            // green_button
+            // 
+            this.green_button.BackColor = System.Drawing.Color.LawnGreen;
+            this.green_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.green_button.ForeColor = System.Drawing.Color.LawnGreen;
+            this.green_button.Location = new System.Drawing.Point(7, 50);
+            this.green_button.Name = "green_button";
+            this.green_button.Size = new System.Drawing.Size(75, 23);
+            this.green_button.TabIndex = 2;
+            this.green_button.UseVisualStyleBackColor = false;
+            this.green_button.Click += new System.EventHandler(this.green_button_Click);
+            // 
             // black_color
             // 
             this.black_color.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -161,102 +261,6 @@ namespace Blade
             this.reset_button.UseVisualStyleBackColor = true;
             this.reset_button.Click += new System.EventHandler(this.reset_button_Click);
             // 
-            // green_button
-            // 
-            this.green_button.BackColor = System.Drawing.Color.GreenYellow;
-            this.green_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.green_button.ForeColor = System.Drawing.Color.GreenYellow;
-            this.green_button.Location = new System.Drawing.Point(7, 50);
-            this.green_button.Name = "green_button";
-            this.green_button.Size = new System.Drawing.Size(75, 23);
-            this.green_button.TabIndex = 2;
-            this.green_button.UseVisualStyleBackColor = false;
-            this.green_button.Click += new System.EventHandler(this.green_button_Click);
-            // 
-            // hotpink_button
-            // 
-            this.hotpink_button.BackColor = System.Drawing.Color.HotPink;
-            this.hotpink_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hotpink_button.ForeColor = System.Drawing.Color.HotPink;
-            this.hotpink_button.Location = new System.Drawing.Point(119, 50);
-            this.hotpink_button.Name = "hotpink_button";
-            this.hotpink_button.Size = new System.Drawing.Size(75, 23);
-            this.hotpink_button.TabIndex = 3;
-            this.hotpink_button.UseVisualStyleBackColor = false;
-            this.hotpink_button.Click += new System.EventHandler(this.hotpink_button_Click);
-            // 
-            // orange_button
-            // 
-            this.orange_button.BackColor = System.Drawing.Color.Orange;
-            this.orange_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.orange_button.ForeColor = System.Drawing.Color.Orange;
-            this.orange_button.Location = new System.Drawing.Point(7, 80);
-            this.orange_button.Name = "orange_button";
-            this.orange_button.Size = new System.Drawing.Size(75, 23);
-            this.orange_button.TabIndex = 4;
-            this.orange_button.UseVisualStyleBackColor = false;
-            this.orange_button.Click += new System.EventHandler(this.orange_button_Click);
-            // 
-            // pink_button
-            // 
-            this.pink_button.BackColor = System.Drawing.Color.Pink;
-            this.pink_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pink_button.ForeColor = System.Drawing.Color.Pink;
-            this.pink_button.Location = new System.Drawing.Point(119, 80);
-            this.pink_button.Name = "pink_button";
-            this.pink_button.Size = new System.Drawing.Size(75, 23);
-            this.pink_button.TabIndex = 5;
-            this.pink_button.UseVisualStyleBackColor = false;
-            this.pink_button.Click += new System.EventHandler(this.pink_button_Click);
-            // 
-            // purple_button
-            // 
-            this.purple_button.BackColor = System.Drawing.Color.MediumPurple;
-            this.purple_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.purple_button.ForeColor = System.Drawing.Color.MediumPurple;
-            this.purple_button.Location = new System.Drawing.Point(7, 110);
-            this.purple_button.Name = "purple_button";
-            this.purple_button.Size = new System.Drawing.Size(75, 23);
-            this.purple_button.TabIndex = 6;
-            this.purple_button.UseVisualStyleBackColor = false;
-            this.purple_button.Click += new System.EventHandler(this.purple_button_Click);
-            // 
-            // red_button
-            // 
-            this.red_button.BackColor = System.Drawing.Color.Red;
-            this.red_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.red_button.ForeColor = System.Drawing.Color.Red;
-            this.red_button.Location = new System.Drawing.Point(119, 110);
-            this.red_button.Name = "red_button";
-            this.red_button.Size = new System.Drawing.Size(75, 23);
-            this.red_button.TabIndex = 7;
-            this.red_button.UseVisualStyleBackColor = false;
-            this.red_button.Click += new System.EventHandler(this.red_button_Click);
-            // 
-            // white_button
-            // 
-            this.white_button.BackColor = System.Drawing.Color.GhostWhite;
-            this.white_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.white_button.ForeColor = System.Drawing.Color.GhostWhite;
-            this.white_button.Location = new System.Drawing.Point(6, 139);
-            this.white_button.Name = "white_button";
-            this.white_button.Size = new System.Drawing.Size(75, 23);
-            this.white_button.TabIndex = 8;
-            this.white_button.UseVisualStyleBackColor = false;
-            this.white_button.Click += new System.EventHandler(this.white_button_Click);
-            // 
-            // yellow_button
-            // 
-            this.yellow_button.BackColor = System.Drawing.Color.Yellow;
-            this.yellow_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellow_button.ForeColor = System.Drawing.Color.Yellow;
-            this.yellow_button.Location = new System.Drawing.Point(119, 139);
-            this.yellow_button.Name = "yellow_button";
-            this.yellow_button.Size = new System.Drawing.Size(75, 23);
-            this.yellow_button.TabIndex = 9;
-            this.yellow_button.UseVisualStyleBackColor = false;
-            this.yellow_button.Click += new System.EventHandler(this.yellow_button_Click);
-            // 
             // typingmode_button
             // 
             this.typingmode_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -272,6 +276,7 @@ namespace Blade
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.groupBox2.Controls.Add(this.gaming_button);
             this.groupBox2.Controls.Add(this.typingmode_button);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Location = new System.Drawing.Point(279, 50);
@@ -281,6 +286,18 @@ namespace Blade
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Modes";
             // 
+            // gaming_button
+            // 
+            this.gaming_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gaming_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gaming_button.Location = new System.Drawing.Point(6, 50);
+            this.gaming_button.Name = "gaming_button";
+            this.gaming_button.Size = new System.Drawing.Size(188, 23);
+            this.gaming_button.TabIndex = 11;
+            this.gaming_button.Text = "GAMING";
+            this.gaming_button.UseVisualStyleBackColor = true;
+            this.gaming_button.Click += new System.EventHandler(this.gaming_button_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -289,7 +306,30 @@ namespace Blade
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 13);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Build 08022021 / V0.0.1-alpha";
+            this.label2.Text = "Build 09022021 / V0.0.2-alpha";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.minecraft_button);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox3.Location = new System.Drawing.Point(584, 50);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 173);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Game Profiles";
+            // 
+            // minecraft_button
+            // 
+            this.minecraft_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minecraft_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.minecraft_button.Location = new System.Drawing.Point(6, 19);
+            this.minecraft_button.Name = "minecraft_button";
+            this.minecraft_button.Size = new System.Drawing.Size(188, 23);
+            this.minecraft_button.TabIndex = 11;
+            this.minecraft_button.Text = "Minecraft";
+            this.minecraft_button.UseVisualStyleBackColor = true;
+            this.minecraft_button.Click += new System.EventHandler(this.minecraft_button_Click);
             // 
             // window1
             // 
@@ -297,6 +337,7 @@ namespace Blade
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.reset_button);
@@ -314,6 +355,7 @@ namespace Blade
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,6 +381,9 @@ namespace Blade
         private System.Windows.Forms.Button typingmode_button;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button gaming_button;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button minecraft_button;
     }
 }
 

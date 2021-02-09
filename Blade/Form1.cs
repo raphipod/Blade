@@ -43,6 +43,7 @@ namespace Blade
         private async void blue_color_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Blue);
         }
 
@@ -50,59 +51,69 @@ namespace Blade
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
             await chroma.SetAllAsync(ColoreColor.Black);
+            await chroma.SetAllAsync(ColoreColor.Black);
         }
 
         private async void reset_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.UninitializeAsync();
         }
 
         private async void green_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Green);
         }
 
         private async void hotpink_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.HotPink);
         }
 
         private async void orange_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Orange);
         }
 
         private async void pink_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Pink);
         }
 
         private async void purple_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Purple);
         }
 
         private async void red_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Red);
         }
 
         private async void white_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.White);
         }
 
         private async void yellow_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Yellow);
         }
 
@@ -111,6 +122,24 @@ namespace Blade
             var chroma = await ColoreProvider.CreateNativeAsync();
             await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.Keyboard.SetKeysAsync(ColoreColor.White, ColoreKey.A, ColoreKey.S, ColoreKey.D, ColoreKey.F, ColoreKey.J, ColoreKey.K, ColoreKey.L, ColoreKey.OemSemicolon);
+        }
+
+        private async void gaming_button_Click(object sender, EventArgs e)
+        {
+            var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Red, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D);
+        }
+
+        private async void minecraft_button_Click(object sender, EventArgs e)
+        {
+            var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.White, ColoreKey.D1, ColoreKey.D2, ColoreKey.D3, ColoreKey.D4, ColoreKey.D5, ColoreKey.D6, ColoreKey.D7, ColoreKey.D8, ColoreKey.D9, ColoreKey.D0);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Red, ColoreKey.Q);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Blue, ColoreKey.E);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.LeftShift);
         }
     }
 }
