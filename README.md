@@ -4,7 +4,7 @@ An open-source GUI for Razer peripherals meant as a replacement to the heavy Raz
 ### How to install?
 
 - First, grab the [Chroma SDK Core](https://assets.razerzone.com/dev_portal/downloads/Razer_Chroma_SDK_Core_v1.10.6.exe), and let it install.
-- Then, either download the installer or use the portable version.
+- Then, either download the ~installer~ or use the portable version. (Installer will eventually be readded to the project, use portable releases for now.)
 
 ### How to use?
 
