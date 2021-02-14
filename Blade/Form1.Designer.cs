@@ -34,7 +34,6 @@ namespace Blade
             this.exitButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.yellow_button = new System.Windows.Forms.Button();
             this.white_button = new System.Windows.Forms.Button();
             this.red_button = new System.Windows.Forms.Button();
@@ -46,16 +45,24 @@ namespace Blade
             this.black_color = new System.Windows.Forms.Button();
             this.blue_color = new System.Windows.Forms.Button();
             this.reset_button = new System.Windows.Forms.Button();
-            this.typingmode_button = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.gaming_button = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.minecraft_button = new System.Windows.Forms.Button();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.laptopmode_button = new MetroFramework.Controls.MetroButton();
+            this.quietmode_button = new MetroFramework.Controls.MetroButton();
+            this.gamingmode_button = new MetroFramework.Controls.MetroButton();
+            this.typingmode_button = new MetroFramework.Controls.MetroButton();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.minecraft_gamemode = new System.Windows.Forms.PictureBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.metroPanel1.SuspendLayout();
+            this.metroPanel2.SuspendLayout();
+            this.metroPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,33 +115,12 @@ namespace Blade
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Controls.Add(this.yellow_button);
-            this.groupBox1.Controls.Add(this.white_button);
-            this.groupBox1.Controls.Add(this.red_button);
-            this.groupBox1.Controls.Add(this.purple_button);
-            this.groupBox1.Controls.Add(this.pink_button);
-            this.groupBox1.Controls.Add(this.orange_button);
-            this.groupBox1.Controls.Add(this.hotpink_button);
-            this.groupBox1.Controls.Add(this.green_button);
-            this.groupBox1.Controls.Add(this.black_color);
-            this.groupBox1.Controls.Add(this.blue_color);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(12, 50);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 173);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Set Keyboard Color";
-            // 
             // yellow_button
             // 
             this.yellow_button.BackColor = System.Drawing.Color.Yellow;
             this.yellow_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.yellow_button.ForeColor = System.Drawing.Color.Yellow;
-            this.yellow_button.Location = new System.Drawing.Point(119, 139);
+            this.yellow_button.Location = new System.Drawing.Point(119, 129);
             this.yellow_button.Name = "yellow_button";
             this.yellow_button.Size = new System.Drawing.Size(75, 23);
             this.yellow_button.TabIndex = 9;
@@ -146,7 +132,7 @@ namespace Blade
             this.white_button.BackColor = System.Drawing.Color.GhostWhite;
             this.white_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.white_button.ForeColor = System.Drawing.Color.GhostWhite;
-            this.white_button.Location = new System.Drawing.Point(6, 139);
+            this.white_button.Location = new System.Drawing.Point(7, 129);
             this.white_button.Name = "white_button";
             this.white_button.Size = new System.Drawing.Size(75, 23);
             this.white_button.TabIndex = 8;
@@ -158,7 +144,7 @@ namespace Blade
             this.red_button.BackColor = System.Drawing.Color.Red;
             this.red_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.red_button.ForeColor = System.Drawing.Color.Red;
-            this.red_button.Location = new System.Drawing.Point(119, 110);
+            this.red_button.Location = new System.Drawing.Point(119, 100);
             this.red_button.Name = "red_button";
             this.red_button.Size = new System.Drawing.Size(75, 23);
             this.red_button.TabIndex = 7;
@@ -170,7 +156,7 @@ namespace Blade
             this.purple_button.BackColor = System.Drawing.Color.MediumPurple;
             this.purple_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.purple_button.ForeColor = System.Drawing.Color.MediumPurple;
-            this.purple_button.Location = new System.Drawing.Point(7, 110);
+            this.purple_button.Location = new System.Drawing.Point(7, 100);
             this.purple_button.Name = "purple_button";
             this.purple_button.Size = new System.Drawing.Size(75, 23);
             this.purple_button.TabIndex = 6;
@@ -182,7 +168,7 @@ namespace Blade
             this.pink_button.BackColor = System.Drawing.Color.Pink;
             this.pink_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pink_button.ForeColor = System.Drawing.Color.Pink;
-            this.pink_button.Location = new System.Drawing.Point(119, 80);
+            this.pink_button.Location = new System.Drawing.Point(119, 71);
             this.pink_button.Name = "pink_button";
             this.pink_button.Size = new System.Drawing.Size(75, 23);
             this.pink_button.TabIndex = 5;
@@ -194,7 +180,7 @@ namespace Blade
             this.orange_button.BackColor = System.Drawing.Color.Orange;
             this.orange_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.orange_button.ForeColor = System.Drawing.Color.Orange;
-            this.orange_button.Location = new System.Drawing.Point(7, 80);
+            this.orange_button.Location = new System.Drawing.Point(7, 71);
             this.orange_button.Name = "orange_button";
             this.orange_button.Size = new System.Drawing.Size(75, 23);
             this.orange_button.TabIndex = 4;
@@ -206,7 +192,7 @@ namespace Blade
             this.hotpink_button.BackColor = System.Drawing.Color.HotPink;
             this.hotpink_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hotpink_button.ForeColor = System.Drawing.Color.HotPink;
-            this.hotpink_button.Location = new System.Drawing.Point(119, 50);
+            this.hotpink_button.Location = new System.Drawing.Point(119, 42);
             this.hotpink_button.Name = "hotpink_button";
             this.hotpink_button.Size = new System.Drawing.Size(75, 23);
             this.hotpink_button.TabIndex = 3;
@@ -218,7 +204,7 @@ namespace Blade
             this.green_button.BackColor = System.Drawing.Color.LawnGreen;
             this.green_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.green_button.ForeColor = System.Drawing.Color.LawnGreen;
-            this.green_button.Location = new System.Drawing.Point(7, 50);
+            this.green_button.Location = new System.Drawing.Point(7, 42);
             this.green_button.Name = "green_button";
             this.green_button.Size = new System.Drawing.Size(75, 23);
             this.green_button.TabIndex = 2;
@@ -229,7 +215,7 @@ namespace Blade
             // 
             this.black_color.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.black_color.ForeColor = System.Drawing.Color.White;
-            this.black_color.Location = new System.Drawing.Point(119, 20);
+            this.black_color.Location = new System.Drawing.Point(119, 13);
             this.black_color.Name = "black_color";
             this.black_color.Size = new System.Drawing.Size(75, 23);
             this.black_color.TabIndex = 1;
@@ -241,7 +227,7 @@ namespace Blade
             this.blue_color.BackColor = System.Drawing.Color.Blue;
             this.blue_color.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.blue_color.ForeColor = System.Drawing.Color.Blue;
-            this.blue_color.Location = new System.Drawing.Point(6, 20);
+            this.blue_color.Location = new System.Drawing.Point(7, 13);
             this.blue_color.Name = "blue_color";
             this.blue_color.Size = new System.Drawing.Size(75, 23);
             this.blue_color.TabIndex = 0;
@@ -261,75 +247,180 @@ namespace Blade
             this.reset_button.UseVisualStyleBackColor = true;
             this.reset_button.Click += new System.EventHandler(this.reset_button_Click);
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.CustomBackground = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.metroLabel1.Location = new System.Drawing.Point(12, 692);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(146, 15);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.White;
+            this.metroLabel1.TabIndex = 15;
+            this.metroLabel1.Text = "Build 10022021 / V0.10-alpha";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.metroPanel1.Controls.Add(this.yellow_button);
+            this.metroPanel1.Controls.Add(this.red_button);
+            this.metroPanel1.Controls.Add(this.white_button);
+            this.metroPanel1.Controls.Add(this.blue_color);
+            this.metroPanel1.Controls.Add(this.purple_button);
+            this.metroPanel1.Controls.Add(this.black_color);
+            this.metroPanel1.Controls.Add(this.pink_button);
+            this.metroPanel1.Controls.Add(this.green_button);
+            this.metroPanel1.Controls.Add(this.orange_button);
+            this.metroPanel1.Controls.Add(this.hotpink_button);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(12, 50);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(200, 173);
+            this.metroPanel1.TabIndex = 16;
+            this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.CustomForeColor = true;
+            this.metroLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.metroLabel2.Location = new System.Drawing.Point(19, 41);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(102, 19);
+            this.metroLabel2.TabIndex = 10;
+            this.metroLabel2.Text = "Keyboard Color";
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroPanel2
+            // 
+            this.metroPanel2.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.metroPanel2.Controls.Add(this.laptopmode_button);
+            this.metroPanel2.Controls.Add(this.quietmode_button);
+            this.metroPanel2.Controls.Add(this.gamingmode_button);
+            this.metroPanel2.Controls.Add(this.typingmode_button);
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(12, 248);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(200, 173);
+            this.metroPanel2.TabIndex = 17;
+            this.metroPanel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // laptopmode_button
+            // 
+            this.laptopmode_button.Location = new System.Drawing.Point(13, 73);
+            this.laptopmode_button.Name = "laptopmode_button";
+            this.laptopmode_button.Size = new System.Drawing.Size(172, 23);
+            this.laptopmode_button.Style = MetroFramework.MetroColorStyle.Black;
+            this.laptopmode_button.TabIndex = 5;
+            this.laptopmode_button.Text = "LAPTOP MODE";
+            this.laptopmode_button.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.laptopmode_button.Click += new System.EventHandler(this.laptopmode_button_Click);
+            // 
+            // quietmode_button
+            // 
+            this.quietmode_button.Location = new System.Drawing.Point(13, 138);
+            this.quietmode_button.Name = "quietmode_button";
+            this.quietmode_button.Size = new System.Drawing.Size(172, 23);
+            this.quietmode_button.Style = MetroFramework.MetroColorStyle.Silver;
+            this.quietmode_button.TabIndex = 4;
+            this.quietmode_button.Text = "Quiet Mode";
+            this.quietmode_button.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // gamingmode_button
+            // 
+            this.gamingmode_button.Location = new System.Drawing.Point(13, 43);
+            this.gamingmode_button.Name = "gamingmode_button";
+            this.gamingmode_button.Size = new System.Drawing.Size(172, 23);
+            this.gamingmode_button.Style = MetroFramework.MetroColorStyle.Black;
+            this.gamingmode_button.TabIndex = 3;
+            this.gamingmode_button.Text = "GAMING MODE";
+            this.gamingmode_button.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.gamingmode_button.Click += new System.EventHandler(this.gamingmode_button_Click);
+            // 
             // typingmode_button
             // 
-            this.typingmode_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.typingmode_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.typingmode_button.Location = new System.Drawing.Point(6, 19);
+            this.typingmode_button.Location = new System.Drawing.Point(13, 14);
             this.typingmode_button.Name = "typingmode_button";
-            this.typingmode_button.Size = new System.Drawing.Size(188, 23);
-            this.typingmode_button.TabIndex = 10;
+            this.typingmode_button.Size = new System.Drawing.Size(172, 23);
+            this.typingmode_button.Style = MetroFramework.MetroColorStyle.Black;
+            this.typingmode_button.TabIndex = 2;
             this.typingmode_button.Text = "TYPING MODE";
-            this.typingmode_button.UseVisualStyleBackColor = true;
+            this.typingmode_button.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.typingmode_button.Click += new System.EventHandler(this.typingmode_button_Click);
             // 
-            // groupBox2
+            // metroLabel3
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox2.Controls.Add(this.gaming_button);
-            this.groupBox2.Controls.Add(this.typingmode_button);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Location = new System.Drawing.Point(279, 50);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 173);
-            this.groupBox2.TabIndex = 12;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Modes";
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.CustomForeColor = true;
+            this.metroLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.metroLabel3.Location = new System.Drawing.Point(19, 240);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(49, 19);
+            this.metroLabel3.TabIndex = 18;
+            this.metroLabel3.Text = "Modes";
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // gaming_button
+            // metroPanel3
             // 
-            this.gaming_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gaming_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gaming_button.Location = new System.Drawing.Point(6, 50);
-            this.gaming_button.Name = "gaming_button";
-            this.gaming_button.Size = new System.Drawing.Size(188, 23);
-            this.gaming_button.TabIndex = 11;
-            this.gaming_button.Text = "GAMING";
-            this.gaming_button.UseVisualStyleBackColor = true;
-            this.gaming_button.Click += new System.EventHandler(this.gaming_button_Click);
+            this.metroPanel3.Controls.Add(this.metroLabel5);
+            this.metroPanel3.Controls.Add(this.minecraft_gamemode);
+            this.metroPanel3.HorizontalScrollbarBarColor = true;
+            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.HorizontalScrollbarSize = 10;
+            this.metroPanel3.Location = new System.Drawing.Point(276, 50);
+            this.metroPanel3.Name = "metroPanel3";
+            this.metroPanel3.Size = new System.Drawing.Size(842, 371);
+            this.metroPanel3.TabIndex = 19;
+            this.metroPanel3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroPanel3.VerticalScrollbarBarColor = true;
+            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.VerticalScrollbarSize = 10;
             // 
-            // label2
+            // metroLabel5
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(9, 698);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 13);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Build 09022021 / V0.0.2-alpha";
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel5.Location = new System.Drawing.Point(65, 32);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(73, 19);
+            this.metroLabel5.TabIndex = 4;
+            this.metroLabel5.Text = "Minecraft";
+            this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // groupBox3
+            // minecraft_gamemode
             // 
-            this.groupBox3.Controls.Add(this.minecraft_button);
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox3.Location = new System.Drawing.Point(584, 50);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 173);
-            this.groupBox3.TabIndex = 14;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Game Profiles";
+            this.minecraft_gamemode.Image = ((System.Drawing.Image)(resources.GetObject("minecraft_gamemode.Image")));
+            this.minecraft_gamemode.Location = new System.Drawing.Point(19, 23);
+            this.minecraft_gamemode.Name = "minecraft_gamemode";
+            this.minecraft_gamemode.Size = new System.Drawing.Size(40, 40);
+            this.minecraft_gamemode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minecraft_gamemode.TabIndex = 3;
+            this.minecraft_gamemode.TabStop = false;
+            this.minecraft_gamemode.Click += new System.EventHandler(this.minecraft_gamemode_Click);
             // 
-            // minecraft_button
+            // metroLabel4
             // 
-            this.minecraft_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minecraft_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.minecraft_button.Location = new System.Drawing.Point(6, 19);
-            this.minecraft_button.Name = "minecraft_button";
-            this.minecraft_button.Size = new System.Drawing.Size(188, 23);
-            this.minecraft_button.TabIndex = 11;
-            this.minecraft_button.Text = "Minecraft";
-            this.minecraft_button.UseVisualStyleBackColor = true;
-            this.minecraft_button.Click += new System.EventHandler(this.minecraft_button_Click);
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.CustomForeColor = true;
+            this.metroLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.metroLabel4.Location = new System.Drawing.Point(279, 41);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel4.TabIndex = 2;
+            this.metroLabel4.Text = "Game Mode";
+            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // window1
             // 
@@ -337,11 +428,14 @@ namespace Blade
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.metroPanel3);
+            this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.metroPanel2);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.reset_button);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.minimizeButton);
             this.Controls.Add(this.exitButton);
@@ -353,9 +447,11 @@ namespace Blade
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.window1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.window1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel2.ResumeLayout(false);
+            this.metroPanel3.ResumeLayout(false);
+            this.metroPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,7 +462,6 @@ namespace Blade
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button black_color;
         private System.Windows.Forms.Button blue_color;
         private System.Windows.Forms.Button reset_button;
@@ -378,12 +473,19 @@ namespace Blade
         private System.Windows.Forms.Button purple_button;
         private System.Windows.Forms.Button yellow_button;
         private System.Windows.Forms.Button white_button;
-        private System.Windows.Forms.Button typingmode_button;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button gaming_button;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button minecraft_button;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroPanel metroPanel2;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroButton gamingmode_button;
+        private MetroFramework.Controls.MetroButton typingmode_button;
+        private MetroFramework.Controls.MetroButton quietmode_button;
+        private MetroFramework.Controls.MetroButton laptopmode_button;
+        private MetroFramework.Controls.MetroPanel metroPanel3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private System.Windows.Forms.PictureBox minecraft_gamemode;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
     }
 }
 
