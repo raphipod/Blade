@@ -1,5 +1,5 @@
 # Blade
-An open-source GUI for Razer peripherals meant as a replacement to the heavy Razer Synapse, which requires authentication and is a RAM-hungry application.
+An open-source GUI for Razer peripherals meant as a replacement to Razer Synapse, which requires authentication and is a RAM-hungry application.
 
 ### How to install?
 
