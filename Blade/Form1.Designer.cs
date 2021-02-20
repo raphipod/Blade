@@ -58,11 +58,14 @@ namespace Blade
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.minecraft_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.csgo_gamemode = new System.Windows.Forms.PictureBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -258,7 +261,7 @@ namespace Blade
             this.metroLabel1.Size = new System.Drawing.Size(146, 15);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.White;
             this.metroLabel1.TabIndex = 15;
-            this.metroLabel1.Text = "Build 10022021 / V0.10-alpha";
+            this.metroLabel1.Text = "Build 20022021 / V0.11-alpha";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroPanel1
@@ -277,7 +280,7 @@ namespace Blade
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(12, 50);
+            this.metroPanel1.Location = new System.Drawing.Point(25, 50);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(200, 173);
             this.metroPanel1.TabIndex = 16;
@@ -291,7 +294,7 @@ namespace Blade
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.CustomForeColor = true;
             this.metroLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.metroLabel2.Location = new System.Drawing.Point(19, 41);
+            this.metroLabel2.Location = new System.Drawing.Point(28, 41);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(102, 19);
             this.metroLabel2.TabIndex = 10;
@@ -308,7 +311,7 @@ namespace Blade
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(12, 248);
+            this.metroPanel2.Location = new System.Drawing.Point(25, 248);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(200, 173);
             this.metroPanel2.TabIndex = 17;
@@ -365,7 +368,7 @@ namespace Blade
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.CustomForeColor = true;
             this.metroLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.metroLabel3.Location = new System.Drawing.Point(19, 240);
+            this.metroLabel3.Location = new System.Drawing.Point(32, 240);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(49, 19);
             this.metroLabel3.TabIndex = 18;
@@ -374,6 +377,8 @@ namespace Blade
             // 
             // metroPanel3
             // 
+            this.metroPanel3.Controls.Add(this.metroLabel6);
+            this.metroPanel3.Controls.Add(this.csgo_gamemode);
             this.metroPanel3.Controls.Add(this.metroLabel5);
             this.metroPanel3.Controls.Add(this.minecraft_gamemode);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
@@ -381,7 +386,7 @@ namespace Blade
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(276, 50);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(842, 371);
+            this.metroPanel3.Size = new System.Drawing.Size(934, 371);
             this.metroPanel3.TabIndex = 19;
             this.metroPanel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel3.VerticalScrollbarBarColor = true;
@@ -422,6 +427,28 @@ namespace Blade
             this.metroLabel4.Text = "Game Mode";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // csgo_gamemode
+            // 
+            this.csgo_gamemode.Image = ((System.Drawing.Image)(resources.GetObject("csgo_gamemode.Image")));
+            this.csgo_gamemode.Location = new System.Drawing.Point(19, 71);
+            this.csgo_gamemode.Name = "csgo_gamemode";
+            this.csgo_gamemode.Size = new System.Drawing.Size(40, 40);
+            this.csgo_gamemode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.csgo_gamemode.TabIndex = 5;
+            this.csgo_gamemode.TabStop = false;
+            this.csgo_gamemode.Click += new System.EventHandler(this.csgo_gamemode_Click);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel6.Location = new System.Drawing.Point(65, 80);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(51, 19);
+            this.metroLabel6.TabIndex = 6;
+            this.metroLabel6.Text = "CS:GO";
+            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
             // window1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,6 +479,7 @@ namespace Blade
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,6 +514,8 @@ namespace Blade
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.PictureBox minecraft_gamemode;
         private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private System.Windows.Forms.PictureBox csgo_gamemode;
     }
 }
 

@@ -150,6 +150,7 @@ namespace Blade
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
             await chroma.SetAllAsync(ColoreColor.Black);
+            await chroma.SetAllAsync(ColoreColor.White);
             await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.D1, ColoreKey.D2, ColoreKey.D3, ColoreKey.D4, ColoreKey.D5, ColoreKey.D6, ColoreKey.D7, ColoreKey.D8, ColoreKey.D9, ColoreKey.D0);
             await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D);
             await chroma.Keyboard.SetKeysAsync(ColoreColor.FromRgb(0x964B00), ColoreKey.Q);
@@ -157,9 +158,12 @@ namespace Blade
             await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.LeftShift);
         }
 
-        private void csgo_gamemode_Click(object sender, EventArgs e)
+        private async void csgo_gamemode_Click(object sender, EventArgs e)
         {
-
+            var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
+            await chroma.SetAllAsync(ColoreColor.White);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D);
         }
     }
 }
