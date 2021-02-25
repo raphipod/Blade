@@ -55,17 +55,20 @@ namespace Blade
             this.typingmode_button = new MetroFramework.Controls.MetroButton();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.phasmo_gamemode = new System.Windows.Forms.PictureBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.csgo_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.minecraft_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.csgo_gamemode = new System.Windows.Forms.PictureBox();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.metroPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phasmo_gamemode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -377,6 +380,8 @@ namespace Blade
             // 
             // metroPanel3
             // 
+            this.metroPanel3.Controls.Add(this.metroLabel7);
+            this.metroPanel3.Controls.Add(this.phasmo_gamemode);
             this.metroPanel3.Controls.Add(this.metroLabel6);
             this.metroPanel3.Controls.Add(this.csgo_gamemode);
             this.metroPanel3.Controls.Add(this.metroLabel5);
@@ -392,6 +397,39 @@ namespace Blade
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // phasmo_gamemode
+            // 
+            this.phasmo_gamemode.Image = ((System.Drawing.Image)(resources.GetObject("phasmo_gamemode.Image")));
+            this.phasmo_gamemode.Location = new System.Drawing.Point(223, 23);
+            this.phasmo_gamemode.Name = "phasmo_gamemode";
+            this.phasmo_gamemode.Size = new System.Drawing.Size(40, 40);
+            this.phasmo_gamemode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.phasmo_gamemode.TabIndex = 7;
+            this.phasmo_gamemode.TabStop = false;
+            this.phasmo_gamemode.Click += new System.EventHandler(this.phasmo_gamemode_Click);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel6.Location = new System.Drawing.Point(65, 80);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(51, 19);
+            this.metroLabel6.TabIndex = 6;
+            this.metroLabel6.Text = "CS:GO";
+            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // csgo_gamemode
+            // 
+            this.csgo_gamemode.Image = ((System.Drawing.Image)(resources.GetObject("csgo_gamemode.Image")));
+            this.csgo_gamemode.Location = new System.Drawing.Point(19, 71);
+            this.csgo_gamemode.Name = "csgo_gamemode";
+            this.csgo_gamemode.Size = new System.Drawing.Size(40, 40);
+            this.csgo_gamemode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.csgo_gamemode.TabIndex = 5;
+            this.csgo_gamemode.TabStop = false;
+            this.csgo_gamemode.Click += new System.EventHandler(this.csgo_gamemode_Click);
             // 
             // metroLabel5
             // 
@@ -427,27 +465,16 @@ namespace Blade
             this.metroLabel4.Text = "Game Mode";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // csgo_gamemode
+            // metroLabel7
             // 
-            this.csgo_gamemode.Image = ((System.Drawing.Image)(resources.GetObject("csgo_gamemode.Image")));
-            this.csgo_gamemode.Location = new System.Drawing.Point(19, 71);
-            this.csgo_gamemode.Name = "csgo_gamemode";
-            this.csgo_gamemode.Size = new System.Drawing.Size(40, 40);
-            this.csgo_gamemode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.csgo_gamemode.TabIndex = 5;
-            this.csgo_gamemode.TabStop = false;
-            this.csgo_gamemode.Click += new System.EventHandler(this.csgo_gamemode_Click);
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel6.Location = new System.Drawing.Point(65, 80);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(51, 19);
-            this.metroLabel6.TabIndex = 6;
-            this.metroLabel6.Text = "CS:GO";
-            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel7.Location = new System.Drawing.Point(269, 32);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(109, 19);
+            this.metroLabel7.TabIndex = 8;
+            this.metroLabel7.Text = "Phasmophobia";
+            this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // window1
             // 
@@ -478,8 +505,9 @@ namespace Blade
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phasmo_gamemode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -516,6 +544,8 @@ namespace Blade
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private System.Windows.Forms.PictureBox csgo_gamemode;
+        private System.Windows.Forms.PictureBox phasmo_gamemode;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
     }
 }
 
