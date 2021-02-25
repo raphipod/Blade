@@ -1,6 +1,8 @@
 # Blade
 An open-source GUI for Razer peripherals meant as a replacement to Razer Synapse, which requires authentication and is a RAM-hungry application.
 
+![blade-demo.png](https://github.com/raphipod/blade/blob/master/blade-demo.png)
+
 ### How to install?
 
 - First, grab the [Chroma SDK Core](https://assets.razerzone.com/dev_portal/downloads/Razer_Chroma_SDK_Core_v1.10.6.exe), and let it install.
