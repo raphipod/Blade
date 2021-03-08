@@ -10,6 +10,8 @@ An open-source GUI for Razer peripherals meant as a replacement to Razer Synapse
 
 ### How to use?
 
+64-bit builds ONLY!
+
 IMPORTANT: Blade can currently only utilize keyboards, I can't test other features than for the Keyboard itself.
 
 Download the release of Blade, start "blade.exe".
