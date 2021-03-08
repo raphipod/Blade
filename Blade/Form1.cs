@@ -134,8 +134,6 @@ namespace Blade
         private async void quietmode_button_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
-            await chroma.UninitializeAsync();
-            await chroma.SetAllAsync(ColoreColor.Black);
             await chroma.SetAllAsync(ColoreColor.Black);
         }
 
@@ -157,8 +155,6 @@ namespace Blade
             await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.LeftShift);
         }
 
-        // Dev-Note: Further develop the CS:GO gamemode
-
         private async void csgo_gamemode_Click(object sender, EventArgs e)
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
@@ -166,9 +162,13 @@ namespace Blade
             await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D);
         }
 
-        private void phasmo_gamemode_Click(object sender, EventArgs e)
+        private async void phasmo_gamemode_Click(object sender, EventArgs e)
         {
-
+            var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D, ColoreKey.LeftShift, ColoreKey.C);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.White, ColoreKey.V, ColoreKey.B);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Red, ColoreKey.Q, ColoreKey.J, ColoreKey.E, ColoreKey.G, ColoreKey.F, ColoreKey.T);
         }
     }
 }

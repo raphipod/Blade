@@ -55,13 +55,13 @@ namespace Blade
             this.typingmode_button = new MetroFramework.Controls.MetroButton();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.phasmo_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.csgo_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.minecraft_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
@@ -264,7 +264,7 @@ namespace Blade
             this.metroLabel1.Size = new System.Drawing.Size(146, 15);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.White;
             this.metroLabel1.TabIndex = 15;
-            this.metroLabel1.Text = "Build 20022021 / V0.11-alpha";
+            this.metroLabel1.Text = "Build 08032021 / V0.11-alpha";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroPanel1
@@ -343,6 +343,7 @@ namespace Blade
             this.quietmode_button.TabIndex = 4;
             this.quietmode_button.Text = "Quiet Mode";
             this.quietmode_button.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.quietmode_button.Click += new System.EventHandler(this.quietmode_button_Click);
             // 
             // gamingmode_button
             // 
@@ -397,6 +398,17 @@ namespace Blade
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel7.Location = new System.Drawing.Point(269, 32);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(109, 19);
+            this.metroLabel7.TabIndex = 8;
+            this.metroLabel7.Text = "Phasmophobia";
+            this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // phasmo_gamemode
             // 
@@ -464,17 +476,6 @@ namespace Blade
             this.metroLabel4.TabIndex = 2;
             this.metroLabel4.Text = "Game Mode";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel7.Location = new System.Drawing.Point(269, 32);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(109, 19);
-            this.metroLabel7.TabIndex = 8;
-            this.metroLabel7.Text = "Phasmophobia";
-            this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // window1
             // 
