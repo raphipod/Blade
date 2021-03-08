@@ -72,7 +72,7 @@ namespace Blade
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
             await chroma.SetAllAsync(ColoreColor.Black);
-            await chroma.SetAllAsync(ColoreColor.HotPink);
+            await chroma.SetAllAsync(ColoreColor.Pink);
         }
 
         private async void orange_button_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace Blade
         {
             var chroma = await ColoreProvider.CreateNativeAsync();
             await chroma.SetAllAsync(ColoreColor.Black);
-            await chroma.SetAllAsync(ColoreColor.Pink);
+            await chroma.SetAllAsync(ColoreColor.HotPink);
         }
 
         private async void purple_button_Click(object sender, EventArgs e)
@@ -169,6 +169,17 @@ namespace Blade
             await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D, ColoreKey.LeftShift, ColoreKey.C);
             await chroma.Keyboard.SetKeysAsync(ColoreColor.White, ColoreKey.V, ColoreKey.B);
             await chroma.Keyboard.SetKeysAsync(ColoreColor.Red, ColoreKey.Q, ColoreKey.J, ColoreKey.E, ColoreKey.G, ColoreKey.F, ColoreKey.T);
+        }
+
+        private async void amogus_button_Click(object sender, EventArgs e) // LOL
+        {
+            var chroma = await ColoreProvider.CreateNativeAsync();
+            await chroma.SetAllAsync(ColoreColor.Black);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Green, ColoreKey.W, ColoreKey.A, ColoreKey.S, ColoreKey.D);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Red, ColoreKey.R, ColoreKey.Q);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.White, ColoreKey.Escape);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.Pink, ColoreKey.E);
+            await chroma.Keyboard.SetKeysAsync(ColoreColor.FromRgb(0x964B00), ColoreKey.Tab);
         }
     }
 }

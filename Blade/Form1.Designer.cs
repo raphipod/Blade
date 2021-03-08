@@ -62,6 +62,8 @@ namespace Blade
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.minecraft_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.amogus_button = new System.Windows.Forms.PictureBox();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
@@ -69,6 +71,7 @@ namespace Blade
             ((System.ComponentModel.ISupportInitialize)(this.phasmo_gamemode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amogus_button)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -264,7 +267,7 @@ namespace Blade
             this.metroLabel1.Size = new System.Drawing.Size(146, 15);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.White;
             this.metroLabel1.TabIndex = 15;
-            this.metroLabel1.Text = "Build 08032021 / V0.11-alpha";
+            this.metroLabel1.Text = "Build 08032021 / V0.20-beta";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroPanel1
@@ -381,6 +384,8 @@ namespace Blade
             // 
             // metroPanel3
             // 
+            this.metroPanel3.Controls.Add(this.metroLabel8);
+            this.metroPanel3.Controls.Add(this.amogus_button);
             this.metroPanel3.Controls.Add(this.metroLabel7);
             this.metroPanel3.Controls.Add(this.phasmo_gamemode);
             this.metroPanel3.Controls.Add(this.metroLabel6);
@@ -477,6 +482,28 @@ namespace Blade
             this.metroLabel4.Text = "Game Mode";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // amogus_button
+            // 
+            this.amogus_button.Image = ((System.Drawing.Image)(resources.GetObject("amogus_button.Image")));
+            this.amogus_button.Location = new System.Drawing.Point(19, 117);
+            this.amogus_button.Name = "amogus_button";
+            this.amogus_button.Size = new System.Drawing.Size(40, 40);
+            this.amogus_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.amogus_button.TabIndex = 9;
+            this.amogus_button.TabStop = false;
+            this.amogus_button.Click += new System.EventHandler(this.amogus_button_Click);
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel8.Location = new System.Drawing.Point(65, 129);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(78, 19);
+            this.metroLabel8.TabIndex = 10;
+            this.metroLabel8.Text = "Among Us";
+            this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
             // window1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,6 +522,7 @@ namespace Blade
             this.Controls.Add(this.minimizeButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "window1";
@@ -509,6 +537,7 @@ namespace Blade
             ((System.ComponentModel.ISupportInitialize)(this.phasmo_gamemode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amogus_button)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -547,6 +576,8 @@ namespace Blade
         private System.Windows.Forms.PictureBox csgo_gamemode;
         private System.Windows.Forms.PictureBox phasmo_gamemode;
         private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private System.Windows.Forms.PictureBox amogus_button;
     }
 }
 
