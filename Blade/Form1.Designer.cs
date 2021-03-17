@@ -55,6 +55,10 @@ namespace Blade
             this.typingmode_button = new MetroFramework.Controls.MetroButton();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.stdv_gamemode = new System.Windows.Forms.PictureBox();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.amogus_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.phasmo_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
@@ -62,16 +66,17 @@ namespace Blade
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.minecraft_gamemode = new System.Windows.Forms.PictureBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.amogus_button = new System.Windows.Forms.PictureBox();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.metroPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stdv_gamemode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amogus_gamemode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phasmo_gamemode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amogus_button)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -245,15 +250,16 @@ namespace Blade
             // 
             // reset_button
             // 
+            this.reset_button.BackColor = System.Drawing.Color.Red;
             this.reset_button.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
             this.reset_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reset_button.ForeColor = System.Drawing.Color.White;
+            this.reset_button.ForeColor = System.Drawing.Color.Transparent;
             this.reset_button.Location = new System.Drawing.Point(1080, 685);
             this.reset_button.Name = "reset_button";
             this.reset_button.Size = new System.Drawing.Size(188, 23);
             this.reset_button.TabIndex = 8;
             this.reset_button.Text = "RESET";
-            this.reset_button.UseVisualStyleBackColor = true;
+            this.reset_button.UseVisualStyleBackColor = false;
             this.reset_button.Click += new System.EventHandler(this.reset_button_Click);
             // 
             // metroLabel1
@@ -264,10 +270,10 @@ namespace Blade
             this.metroLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroLabel1.Location = new System.Drawing.Point(12, 692);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(146, 15);
+            this.metroLabel1.Size = new System.Drawing.Size(142, 15);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.White;
             this.metroLabel1.TabIndex = 15;
-            this.metroLabel1.Text = "Build 08032021 / V0.20-beta";
+            this.metroLabel1.Text = "Build 16032021 / V0.21-beta";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroPanel1
@@ -384,8 +390,10 @@ namespace Blade
             // 
             // metroPanel3
             // 
+            this.metroPanel3.Controls.Add(this.metroLabel10);
+            this.metroPanel3.Controls.Add(this.stdv_gamemode);
             this.metroPanel3.Controls.Add(this.metroLabel8);
-            this.metroPanel3.Controls.Add(this.amogus_button);
+            this.metroPanel3.Controls.Add(this.amogus_gamemode);
             this.metroPanel3.Controls.Add(this.metroLabel7);
             this.metroPanel3.Controls.Add(this.phasmo_gamemode);
             this.metroPanel3.Controls.Add(this.metroLabel6);
@@ -403,6 +411,50 @@ namespace Blade
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel10.Location = new System.Drawing.Point(65, 180);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(108, 19);
+            this.metroLabel10.TabIndex = 12;
+            this.metroLabel10.Text = "Stardew Valley";
+            this.metroLabel10.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // stdv_gamemode
+            // 
+            this.stdv_gamemode.Image = ((System.Drawing.Image)(resources.GetObject("stdv_gamemode.Image")));
+            this.stdv_gamemode.Location = new System.Drawing.Point(19, 169);
+            this.stdv_gamemode.Name = "stdv_gamemode";
+            this.stdv_gamemode.Size = new System.Drawing.Size(40, 40);
+            this.stdv_gamemode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.stdv_gamemode.TabIndex = 11;
+            this.stdv_gamemode.TabStop = false;
+            this.stdv_gamemode.Click += new System.EventHandler(this.stdv_gamemode_Click);
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel8.Location = new System.Drawing.Point(65, 129);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(78, 19);
+            this.metroLabel8.TabIndex = 10;
+            this.metroLabel8.Text = "Among Us";
+            this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // amogus_gamemode
+            // 
+            this.amogus_gamemode.Image = ((System.Drawing.Image)(resources.GetObject("amogus_gamemode.Image")));
+            this.amogus_gamemode.Location = new System.Drawing.Point(19, 117);
+            this.amogus_gamemode.Name = "amogus_gamemode";
+            this.amogus_gamemode.Size = new System.Drawing.Size(40, 40);
+            this.amogus_gamemode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.amogus_gamemode.TabIndex = 9;
+            this.amogus_gamemode.TabStop = false;
+            this.amogus_gamemode.Click += new System.EventHandler(this.amogus_gamemode_Click);
             // 
             // metroLabel7
             // 
@@ -482,27 +534,32 @@ namespace Blade
             this.metroLabel4.Text = "Game Mode";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // amogus_button
+            // metroPanel4
             // 
-            this.amogus_button.Image = ((System.Drawing.Image)(resources.GetObject("amogus_button.Image")));
-            this.amogus_button.Location = new System.Drawing.Point(19, 117);
-            this.amogus_button.Name = "amogus_button";
-            this.amogus_button.Size = new System.Drawing.Size(40, 40);
-            this.amogus_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.amogus_button.TabIndex = 9;
-            this.amogus_button.TabStop = false;
-            this.amogus_button.Click += new System.EventHandler(this.amogus_button_Click);
+            this.metroPanel4.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.metroPanel4.HorizontalScrollbarBarColor = true;
+            this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel4.HorizontalScrollbarSize = 10;
+            this.metroPanel4.Location = new System.Drawing.Point(25, 473);
+            this.metroPanel4.Name = "metroPanel4";
+            this.metroPanel4.Size = new System.Drawing.Size(629, 173);
+            this.metroPanel4.TabIndex = 20;
+            this.metroPanel4.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroPanel4.VerticalScrollbarBarColor = true;
+            this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel4.VerticalScrollbarSize = 10;
             // 
-            // metroLabel8
+            // metroLabel9
             // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel8.Location = new System.Drawing.Point(65, 129);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(78, 19);
-            this.metroLabel8.TabIndex = 10;
-            this.metroLabel8.Text = "Among Us";
-            this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.CustomForeColor = true;
+            this.metroLabel9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.metroLabel9.Location = new System.Drawing.Point(32, 465);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(46, 19);
+            this.metroLabel9.TabIndex = 21;
+            this.metroLabel9.Text = "Effects";
+            this.metroLabel9.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // window1
             // 
@@ -510,6 +567,8 @@ namespace Blade
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.metroLabel9);
+            this.Controls.Add(this.metroPanel4);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroPanel3);
             this.Controls.Add(this.metroLabel3);
@@ -534,10 +593,11 @@ namespace Blade
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stdv_gamemode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amogus_gamemode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phasmo_gamemode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.csgo_gamemode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minecraft_gamemode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amogus_button)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -577,7 +637,11 @@ namespace Blade
         private System.Windows.Forms.PictureBox phasmo_gamemode;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel8;
-        private System.Windows.Forms.PictureBox amogus_button;
+        private System.Windows.Forms.PictureBox amogus_gamemode;
+        private MetroFramework.Controls.MetroPanel metroPanel4;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private System.Windows.Forms.PictureBox stdv_gamemode;
     }
 }
 
