@@ -18,30 +18,10 @@ Download the release of Blade, start "blade.exe".
 
 Now, you can either choose to have a full keyboard illuminated in one color, or you can choose from Modes:
 
-## General Modes implemented: 
-- The Type Mode
+## Features:
+This application has the following features:
 
-This mode lights up the home row and nothing else. No distraction.
-
-- Gaming Mode
-
-Lights up WASD in red color.
-
-- (New since 0.10): Laptop Mode
-
-This lights up all keys in a solid white color.
-
-- (New since 0.10): Quiet Mode
-
-... deactivates all keys.
-
-## Game Modes:
-- Minecraft:
-
-Lights up WASD, Hotbar (1-9), Q, E.
-
-**More games are supported soon!**
-
-# PLEASE CONTRIBUTE!
-This .NET-App utilizes Colore, a .NET wrapper over the Razer SDK. It unfortunately is poorly documented, and I am not a blessed programmer either.
-So please, on a voluntary basis, help grow this project.
+- Different modes: Typing mode, Gaming mode, Laptop Mode and Quiet Mode
+- 10 Keyboard colors: Sets all keys to a specific color
+- Game Mode: Minecraft, CS:GO, Among Us, Stardew Valley, Phasmophobia (more to come)
+- (Planned: Effects)
